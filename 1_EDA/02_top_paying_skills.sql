@@ -72,4 +72,4 @@ Takeaway: While the very top-paying skill (Rust) still has less demand than majo
 │ jupyter    │      147500.0 │          400 │
 └────────────┴───────────────┴──────────────┘
   25 rows                         3 columns
-*/
+*/ 
