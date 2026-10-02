@@ -96,7 +96,7 @@ WHEN NOT MATCHED BY SOURCE THEN DELETE;
 
 
 
-
+-- Final check Query
 SELECT
     job_title_short,
     COUNT(*) AS job_count,
