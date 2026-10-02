@@ -43,7 +43,7 @@ The data warehouse implements a star schema with `company_dim`, `skills_dim`, `j
 
 - **SQL Files:**
 - [`01_create_tables_dw.sql`](./01_create_tables_dw.sql) – Defines star schema with 4 core tables
-[`02_load_schema_dw.sql`](./02_load_schema_dw.sql) – Extracts CSVs from GCS and loads into warehouse tables
+- [`02_load_schema_dw.sql`](./02_load_schema_dw.sql) – Extracts CSVs from GCS and loads into warehouse tables
 - **Purpose:** Star schema serving as single source of truth for analytical queries
 - **Grain:** One row per job posting in the fact table (`job_postings_fact`)
 
