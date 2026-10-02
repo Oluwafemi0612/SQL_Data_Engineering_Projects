@@ -2,7 +2,7 @@
 
 An end-to-end data engineering pipeline that transforms raw CSV files from Google Cloud Storage into a normalized star schema data warehouse, then builds analytical data marts.
 
-![Data Pipeline Architecture](../Images/1_2_Project2_Data_pipeline.png)
+![Data Pipeline Architecture](/Images/1_2_Project2_Data_Pipeline.png)
 
 ## Executive Summary
 
@@ -31,7 +31,7 @@ An end-to-end data engineering pipeline that transforms raw CSV files from Googl
 
 ## Pipeline Architacture
 
-![Data Pipeline Architecture](../Images/1_2_Project2_Data_pipeline.png)
+![Data Pipeline Architecture](/Images/1_2_Project2_Data_Pipeline.png)
 
 The pipeline transforms job posting CSVs from Google Cloud Storage into a normalized star schema data warehouse, then builds specialized analytical data marts. BI tools (Excel, Power BI, Tableau, Python) consume from both the warehouse and marts.
 
@@ -39,7 +39,7 @@ The pipeline transforms job posting CSVs from Google Cloud Storage into a normal
 
 The data warehouse implements a star schema with `company_dim`, `skills_dim`, `job_postings_fact`, and `skills_job_dim` tables.
 
-![Data Warehouse Schema](../Images/1_2_Data_Warehouse.png)
+![Data Warehouse Schema](/Images/1_2_Data_Warehouse.png)
 
 - **SQL Files:**
 - [`01_create_tables_dw.sql`](./01_create_tables_dw.sql) – Defines star schema with 4 core tables
@@ -60,7 +60,7 @@ Denormalized table with all dimensions for ad-hoc queries.
 
 Time-series skill demand analysis with additive measures.
 
-![Skills Mart Schema](../Images/1_2_Skills_Mart.png)
+![Skills Mart Schema](/Images/1_2_Skills_Mart.png)
 
 - **SQL File:** [`04_create_skills_mart.sql`](./04_create_skills_mart.sql) – Builds time-series skill demand mart
 - **Purpose:** Time-series analysis of skill demand over time with additive measures
@@ -70,7 +70,7 @@ Time-series skill demand analysis with additive measures.
 ### Priority Mart
 Priority role tracking with incremental updates using MERGE operations.
 
-![Priority Mart Schema](../Images/1_2_Priority_Mart.png)
+![Priority Mart Schema](/Images/1_2_Priority_Mart.png)
 
 - **SQL Files:**
 - [`05_create_priority_mart.sql`](./05_create_priority_mart.sql) – Initial build of priority roles and jobs snapshot
